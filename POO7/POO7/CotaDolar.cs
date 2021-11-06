@@ -12,34 +12,46 @@ namespace POO7
         double quantia;
         double resultado;
 
+        public CotaDolar()
+        {
+            this.cotacao = 0;
+            this.quantia = 0;
+        }
+
+        public CotaDolar(double x, double y)
+        {
+            this.cotacao = x;
+            this.quantia = y;
+        }
+
         public void setCotacao(double x)
         {
-            cotacao = x;
+            this.cotacao = x;
         }
 
         public void setQuantia(double x)
         {
-            quantia = x;
+            this.quantia = x;
         }
 
         public double getCotacao()
         {
-            return cotacao;
+            return this.cotacao;
         }
 
         public double getQuantia()
         {
-            return quantia;
+            return this.quantia;
         }
 
         public double getResultado()
         {
-            return resultado;
+            return this.resultado;
         }
 
         public void calcular()
         {
-            resultado = quantia * cotacao;
+            this.resultado = this.quantia * this.cotacao;
         }
     }
 }

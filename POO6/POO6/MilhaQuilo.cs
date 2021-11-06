@@ -11,24 +11,34 @@ namespace POO6
         double milhas;
         double resultado;
 
+        public MilhaQuilo()
+        {
+            this.milhas = 0;
+        }
+
+        public MilhaQuilo(double x)
+        {
+            this.milhas = x;
+        }
+
         public void setMilhas(double x)
         {
-            milhas = x;
+            this.milhas = x;
         }
 
         public double getMilhas()
         {
-            return milhas;
+            return this.milhas;
         }
 
         public double getResultado()
         {
-            return resultado;
+            return this.resultado;
         }
 
         public void calcular()
         {
-            resultado = milhas * 1.852;
+            this.resultado = this.milhas * 1.852;
         }
     }
 }
