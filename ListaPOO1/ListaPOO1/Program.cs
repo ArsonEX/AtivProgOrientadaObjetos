@@ -15,14 +15,14 @@ namespace ListaPOO1
             do
             {
                 Console.Write("Digite a Base: ");
-                a.setBasinha(int.Parse(Console.ReadLine()));
+                a.setBasinha(double.Parse(Console.ReadLine()));
             }
             while (a.getBasinha() <= 0);
 
             do
             {
                 Console.Write("Digite a Altura: ");
-                a.setAltura(int.Parse(Console.ReadLine()));
+                a.setAltura(double.Parse(Console.ReadLine()));
             }
             while (a.getAltura() <= 0);
 

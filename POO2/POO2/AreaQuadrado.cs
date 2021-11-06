@@ -11,24 +11,34 @@ namespace POO2
         private double aresta;
         private double resultado;
 
+        public AreaQuadrado()
+        {
+            this.aresta = 0;
+        }
+
+        public AreaQuadrado(double x)
+        {
+            this.aresta = x;
+        }
+
         public void setAresta(double x)
         {
-            aresta = x;
+            this.aresta = x;
         }
 
         public double getAresta()
         {
-            return aresta;
+            return this.aresta;
         }
 
         public double getResultado()
         {
-            return resultado;
+            return this.resultado;
         }
 
         public void calcular()
         {
-            resultado = Math.Pow(aresta, 2);
+            this.resultado = Math.Pow(this.aresta, 2);
         }
     }
 }

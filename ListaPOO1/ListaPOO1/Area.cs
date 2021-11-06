@@ -8,40 +8,52 @@ namespace ListaPOO1
 {
     class Area
     {
-        private int basinha;
-        private int altura;
-        private int resultado;
+        private double basinha;
+        private double altura;
+        private double resultado;
+
+        public Area()
+        {
+            this.basinha = 0;
+            this.altura = 0;
+        }
+
+        public Area(double x, double y)
+        {
+            this.basinha = x;
+            this.altura = y;
+        }
 
         #region getset
-        public void setBasinha(int x)
+        public void setBasinha(double x)
         {
-            basinha = x;
+            this.basinha = x;
         }
 
-        public void setAltura(int x)
+        public void setAltura(double x)
         {
-            altura = x; ;
+            this.altura = x; ;
         }
 
-        public int getBasinha()
+        public double getBasinha()
         {
-            return basinha;
+            return this.basinha;
         }
 
-        public int getAltura()
+        public double getAltura()
         {
-            return altura;
+            return this.altura;
         }
 
-        public int getResultado()
+        public double getResultado()
         {
-            return resultado;
+            return this.resultado;
         }
         #endregion
 
         public void calcular()
         {
-            resultado = basinha * altura;
+            this.resultado = this.basinha * this.altura;
         }
     }
 }
