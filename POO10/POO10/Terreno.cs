@@ -12,34 +12,46 @@ namespace POO10
         double altura;
         double area;
 
+        public Terreno()
+        {
+            this.basin = 0;
+            this.altura = 0;
+        }
+
+        public Terreno(double x, double y)
+        {
+            this.basin = x;
+            this.altura = y;
+        }
+
         public void setBasin(double x)
         {
-            basin = x;
+            this.basin = x;
         }
 
         public void setAltura(double x)
         {
-            altura = x;
+            this.altura = x;
         }
 
         public double getBasin()
         {
-            return basin;
+            return this.basin;
         }
 
         public double getAltura()
         {
-            return altura;
+            return this.altura;
         }
 
         public double getArea()
         {
-            return area;
+            return this.area;
         }
 
         public void calcular()
         {
-            area = basin * altura;
+            this.area = this.basin * this.altura;
         }
     }
 }

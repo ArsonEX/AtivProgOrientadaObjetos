@@ -12,41 +12,55 @@ namespace POO8
         int n2;
         string ns="'não atribuido'";
 
+        public Maior()
+        {
+            this.n1 = 0;
+            this.n2 = 0;
+            this.ns = "";
+        }
+
+        public Maior(int x, int y, string z)
+        {
+            this.n1 = x;
+            this.n2 = y;
+            this.ns = z;
+        }
+
         public void setn1(int x)
         {
-            n1 = x;
+            this.n1 = x;
         }
 
         public void setn2(int x)
         {
-            n2 = x;
+            this.n2 = x;
         }
 
         public int getn1()
         {
-            return n1;
+            return this.n1;
         }
 
         public int getn2()
         {
-            return n2;
+            return this.n2;
         }
         public string getns()
         {
-            return ns;
+            return this.ns;
         }
 
         public int indicarMaior()
         {
-            if(n1>n2)
+            if(this.n1 > this.n2)
             {
-                ns = "primeiro";
-                return n1;
+                this.ns = "primeiro";
+                return this.n1;
             }
             else
             {
-                ns = "segundo";
-                return n2;     
+                this.ns = "segundo";
+                return this.n2;     
             }
         }
     }
