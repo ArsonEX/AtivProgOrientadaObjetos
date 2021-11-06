@@ -42,37 +42,33 @@ namespace POO12
             return c;
         }
 
-        public void triangular()
+        public string triangular()
         {
             if (a + b < c)
             {
-                Console.Write("Não formam triângulo");
-                return;
+                return "Não";
             }
             if (a + c < b)
             {
-                Console.Write("Não formam triângulo");
-                return;
+                return "Não";
             }
             if (b + c < a)
             {
-                Console.Write("Não formam triângulo");
-                return;
+                return "Não";
             }
 
             //tipo de triangulo
-            if (a == b && a == c)
+            if (a == b && a == c) //equilátero
             {
-                Console.Write("Triângulo equilátero");
-                return;
+                return "equilátero";
             }
-            if (a == b || b == c || a == c)
+            if (a == b || b == c || a == c) //isosceles
             {
-                Console.Write("Triângulo isosceles");
+                return "isosceles";
             }
-            else
+            else //escaleno
             {
-                Console.Write("Triângulo escaleno");
+                return "escaleno";
             }
         }
     }

@@ -6,7 +6,7 @@ namespace POO12
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("=-ABC Formação de triangulo==");
+            Console.WriteLine("=-ABC Formação de triângulo==");
             Console.WriteLine();
 
             FTriangulo ft;
@@ -34,7 +34,14 @@ namespace POO12
             while (ft.getC() <= 0);
 
             Console.WriteLine();
-            ft.triangular();
+            if (ft.triangular()=="Não")
+            {
+                Console.Write("ABC não forma triângulo");
+            }
+            else
+            {
+                Console.WriteLine("O triangulo formado é {0}", ft.triangular());
+            }
         }
     }
 }

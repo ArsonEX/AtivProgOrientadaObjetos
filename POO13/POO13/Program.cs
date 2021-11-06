@@ -33,7 +33,15 @@ namespace POO13
             while (t.getC() <= 0);
 
             Console.WriteLine();
-            t.trianguloRetangular();
+            if (t.trianguloRetangular()== 1)
+            {
+                Console.WriteLine("ABC Formam triângulo retângulo");
+            }
+            else
+            {
+                Console.WriteLine("Triângulo retângulo não é formado");
+            }
+            
         }
     }
 }

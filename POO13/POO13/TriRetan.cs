@@ -42,27 +42,27 @@ namespace POO13
             return c;
         }
 
-        public void trianguloRetangular()
+        public int trianguloRetangular()
         {
             if (Math.Pow(a, 2) == Math.Pow(b, 2) + Math.Pow(c, 2))
             {
-                Console.Write("ABC Formam Triângulo retângulo");
+                return 1;
             }
             else
             {
                 if (Math.Pow(b, 2) == Math.Pow(a, 2) + Math.Pow(c, 2))
                 {
-                    Console.Write("ABC Formam Triângulo retângulo");
+                    return 1;
                 }
                 else
                 {
                     if (Math.Pow(c, 2) == Math.Pow(b, 2) + Math.Pow(a, 2))
                     {
-                        Console.Write("ABC Formam Triângulo retângulo");
+                        return 1;
                     }
                     else
                     {
-                        Console.Write("Não formam Triângulo Retângulo");
+                        return 0;
                     }
                 }
             }
