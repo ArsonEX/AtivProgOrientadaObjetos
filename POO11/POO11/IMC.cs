@@ -12,34 +12,46 @@ namespace POO11
         double peso;
         double Imc;
 
+        public IMC()
+        {
+            this.altura = 0;
+            this.peso = 0;
+        }
+
+        public IMC(double x, double y)
+        {
+            this.altura = x;
+            this.peso = y;
+        }
+
         public void setAltura(double x)
         {
-            altura = x;
+            this.altura = x;
         }
 
         public void setPeso(double x)
         {
-            peso = x;
+            this.peso = x;
         }
 
         public double getAltura()
         {
-            return altura;
+            return this.altura;
         }
 
         public double getPeso()
         {
-            return peso;
+            return this.peso;
         }
 
         public double getImc()
         {
-            return Imc;
+            return this.Imc;
         }
 
         public void calcular()
         {
-            Imc = peso / Math.Pow(altura,2);
+            this.Imc = this.peso / Math.Pow(this.altura,2);
         }
     }
 }

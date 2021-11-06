@@ -12,57 +12,71 @@ namespace POO12
         int b;
         int c;
 
+        public FTriangulo()
+        {
+            this.a = 0;
+            this.b = 0;
+            this.c = 0;
+        }
+
+        public FTriangulo(int x, int y, int z)
+        {
+            this.a = x;
+            this.b = y;
+            this.c = z;
+        }
+
         public void setA(int x)
         {
-            a = x;
+            this.a = x;
         }
 
         public void setB(int x)
         {
-            b = x;
+            this.b = x;
         }
 
         public void setC(int x)
         {
-            c = x;
+            this.c = x;
         }
 
         public int getA()
         {
-            return a;
+            return this.a;
         }
 
         public int getB()
         {
-            return b;
+            return this.b;
         }
 
         public int getC()
         {
-            return c;
+            return this.c;
         }
 
         public string triangular()
         {
-            if (a + b < c)
+            if (this.a + this.b < this.c)
             {
                 return "Não";
             }
-            if (a + c < b)
+            if (this.a + this.c < this.b)
             {
                 return "Não";
             }
-            if (b + c < a)
+            if (this.b + this.c < this.a)
             {
                 return "Não";
             }
 
             //tipo de triangulo
-            if (a == b && a == c) //equilátero
+            if (this.a == this.b && this.a == this.c) //equilátero
             {
                 return "equilátero";
             }
-            if (a == b || b == c || a == c) //isosceles
+            if (this.a == this.b || b == this.c || a == this.c) //isosceles
             {
                 return "isosceles";
             }

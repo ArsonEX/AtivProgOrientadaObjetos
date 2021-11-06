@@ -12,51 +12,65 @@ namespace POO13
         int b;
         int c;
 
+        public TriRetan()
+        {
+            this.a = 0;
+            this.b = 0;
+            this.c = 0;
+        }
+
+        public TriRetan(int x, int y, int z)
+        {
+            this.a = x;
+            this.b = y;
+            this.c = z;
+        }
+
         public void setA(int x)
         {
-            a = x;
+            this.a = x;
         }
 
         public void setB(int x)
         {
-            b = x;
+            this.b = x;
         }
 
         public void setC(int x)
         {
-            c = x;
+            this.c = x;
         }
 
         public int getA()
         {
-            return a;
+            return this.a;
         }
 
         public int getB()
         {
-            return b;
+            return this.b;
         }
 
         public int getC()
         {
-            return c;
+            return this.c;
         }
 
         public int trianguloRetangular()
         {
-            if (Math.Pow(a, 2) == Math.Pow(b, 2) + Math.Pow(c, 2))
+            if (Math.Pow(this.a, 2) == Math.Pow(this.b, 2) + Math.Pow(this.c, 2))
             {
                 return 1;
             }
             else
             {
-                if (Math.Pow(b, 2) == Math.Pow(a, 2) + Math.Pow(c, 2))
+                if (Math.Pow(this.b, 2) == Math.Pow(this.a, 2) + Math.Pow(this.c, 2))
                 {
                     return 1;
                 }
                 else
                 {
-                    if (Math.Pow(c, 2) == Math.Pow(b, 2) + Math.Pow(a, 2))
+                    if (Math.Pow(this.c, 2) == Math.Pow(this.b, 2) + Math.Pow(this.a, 2))
                     {
                         return 1;
                     }
